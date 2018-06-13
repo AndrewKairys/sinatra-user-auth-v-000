@@ -34,7 +34,6 @@ class ApplicationController < Sinatra::Base
     params["email"], password: 
     params["password"])
     session[:id] = @user.id
-
     redirect '/users/home'
   end
 
